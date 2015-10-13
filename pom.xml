@@ -64,6 +64,10 @@
                 <groupId>ru.yandex.qatools.allure</groupId>
                 <artifactId>allure-maven-plugin</artifactId>
                 <version>${allure.maven.version}</version>
+                <configuration> 
+                    <resultsPattern>${project.build.directory}/allure-results</resultsPattern> 
+                    <reportVersion>${allure.version}</reportVersion> 
+                </configuration> 
             </plugin>
         </plugins>
     </reporting>
